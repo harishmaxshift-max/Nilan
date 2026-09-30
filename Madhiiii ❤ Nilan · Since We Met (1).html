@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Madhiiii ❤️ Nilan</title>
+<meta name="theme-color" content="#14090d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Since We Met">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2314090d'/%3E%3Ctext x='50' y='72' font-size='60' text-anchor='middle'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#fff5f6; --bg2:#ffe0e6; --card:rgba(255,255,255,.7); --text:#3a1520; --muted:#9b6672;
+  --accent:#e11d48; --track:rgba(225,29,72,.15); --line:rgba(225,29,72,.18);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#14090d; --bg2:#2a0f1a; --card:rgba(255,255,255,.05); --text:#fbe9ed; --muted:#b58592;
+    --accent:#ff4d6d; --track:rgba(255,77,109,.18); --line:rgba(255,255,255,.09);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14090d; --bg2:#2a0f1a; --card:rgba(255,255,255,.05); --text:#fbe9ed; --muted:#b58592;
+  --accent:#ff4d6d; --track:rgba(255,77,109,.18); --line:rgba(255,255,255,.09);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;min-height:100%}
+body{
+  background:radial-gradient(120% 70% at 50% 0%,var(--bg2),var(--bg) 70%) var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  min-height:100vh; min-height:100dvh;
+  display:flex; align-items:center; justify-content:center; padding:24px;
+}
+main{width:100%;max-width:420px;text-align:center}
+.names{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;font-size:clamp(28px,9vw,38px);line-height:1.2;margin:0;letter-spacing:.01em}
+.names .h{display:inline-block;animation:beat 2.6s ease-in-out infinite;filter:drop-shadow(0 4px 14px var(--track));font-style:normal;margin:0 .1em}
+@keyframes beat{0%,100%{transform:scale(1)}12%{transform:scale(1.22)}24%{transform:scale(1)}36%{transform:scale(1.14)}48%{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.names .h{animation:none}}
+.counter{margin:34px 0 8px;display:flex;flex-direction:column;gap:2px}
+.row{display:flex;align-items:baseline;justify-content:center;gap:12px;font-variant-numeric:tabular-nums}
+.row b{font-weight:200;color:var(--accent);letter-spacing:-.03em;line-height:1.05}
+.row span{font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);min-width:78px;text-align:left}
+.r-d b{font-size:clamp(72px,26vw,116px)}
+.r-h b,.r-m b{font-size:clamp(44px,15vw,64px);color:var(--text)}
+.r-s b{font-size:clamp(36px,12vw,52px);color:var(--muted)}
+.since{color:var(--muted);font-size:14px;letter-spacing:.06em;margin-top:22px}
+.cal{color:var(--muted);font-size:12px;margin-top:6px;opacity:.85;min-height:16px}
+.still{font-family:Georgia,serif;font-style:italic;font-size:17px;margin-top:18px}
+.ms{margin-top:32px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:16px 18px;text-align:left}
+.ms small{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ms .next{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.ms .next strong{font-size:17px}
+.ms .next span{font-size:13px;color:var(--muted)}
+.ms .when{font-size:12px;color:var(--muted);margin-top:2px}
+.bar{height:6px;border-radius:6px;background:var(--track);margin:12px 0 4px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:6px;background:linear-gradient(90deg,#ff8fa3,var(--accent));transition:width 1s ease}
+.done{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.done em{font-style:normal;font-size:12px;padding:4px 10px;border-radius:99px;background:var(--track);color:var(--text)}
+.party{display:none;margin-bottom:14px;padding:12px;border-radius:16px;background:var(--track);border:1px solid var(--line);font-size:15px}
+.party.on{display:block}
+</style>
+</head>
+<body>
+<main>
+  <h1 class="names" id="names">Madhiiii <span class="h">❤️</span> Nilan</h1>
+
+  <div class="counter" aria-live="off">
+    <div class="row r-d"><b id="d">0</b><span>Days</span></div>
+    <div class="row r-h"><b id="h">0</b><span>Hours</span></div>
+    <div class="row r-m"><b id="m">0</b><span>Minutes</span></div>
+    <div class="row r-s"><b id="s">0</b><span>Seconds</span></div>
+  </div>
+
+  <div class="since">Since July 7, 2026 • 8:00 AM</div>
+  <div class="cal" id="cal"></div>
+  <div class="still">And still counting… ♾️❤️</div>
+
+  <section class="ms">
+    <div class="party" id="party"></div>
+    <small>Next celebration</small>
+    <div class="next"><strong id="nName"></strong><span id="nLeft"></span></div>
+    <div class="when" id="nWhen"></div>
+    <div class="bar"><i id="bar"></i></div>
+    <div class="done" id="done"></div>
+  </section>
+</main>
+<script>
+// Start moment: 2026-07-07 08:00:00 Asia/Kolkata (UTC+05:30, India has no DST)
+var START = Date.parse("2026-07-07T08:00:00+05:30");
+var Y0 = 2026, M0 = 6, D0 = 7;
+var DAY = 86400000, IST = 19800000;
+var $ = function(id){return document.getElementById(id)};
+var MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+// Anniversary / month anchors are built from IST wall-clock, so leap years and month lengths are handled by the calendar.
+function istMs(y, m, d){ return Date.UTC(y, m, d, 8, 0, 0) - IST; }
+function fmtDate(ms){
+  var t = new Date(ms + IST);
+  var h = t.getUTCHours(), ap = h >= 12 ? "PM" : "AM"; h = h % 12 || 12;
+  var mi = t.getUTCMinutes(); mi = mi < 10 ? "0" + mi : mi;
+  return MONTHS[t.getUTCMonth()] + " " + t.getUTCDate() + ", " + t.getUTCFullYear() + " at " + h + ":" + mi + " " + ap + " IST";
+}
+function num(n){ return n.toLocaleString("en-US"); }
+
+// Endless milestone generator: 100 days, 500 days, then every 1,000 days, and every year.
+function milestone(list, i){ return list[i]; }
+function buildMilestones(upToMs){
+  var out = [];
+  var addD = function(n){ out.push({t: START + n * DAY, name: num(n) + " Days ❤️", key: "d" + n}); };
+  addD(100); addD(500);
+  for (var n = 1000; START + n * DAY <= upToMs; n += 1000) addD(n);
+  for (var y = 1; istMs(Y0 + y, M0, D0) <= upToMs; y++)
+    out.push({t: istMs(Y0 + y, M0, D0), name: (y === 1 ? "1 Year" : y + " Years") + " ❤️", key: "y" + y});
+  out.sort(function(a, b){ return a.t - b.t; });
+  return out;
+}
+
+function calendarText(now){
+  var n = new Date(now + IST);
+  var months = (n.getUTCFullYear() - Y0) * 12 + (n.getUTCMonth() - M0);
+  var anchor = istMs(Y0, M0 + months, D0);
+  if (now < anchor) { months--; anchor = istMs(Y0, M0 + months, D0); }
+  if (months < 1) return "";
+  var yrs = Math.floor(months / 12), mo = months % 12;
+  var days = Math.floor((now - anchor) / DAY);
+  var p = [];
+  if (yrs) p.push(yrs + (yrs === 1 ? " year" : " years"));
+  if (mo) p.push(mo + (mo === 1 ? " month" : " months"));
+  p.push(days + (days === 1 ? " day" : " days"));
+  return p.join(" · ");
+}
+
+function render(){
+  var now = Date.now();
+  var diff = Math.max(0, now - START);
+  var mins = Math.floor(diff / 60000);
+  $("s").textContent = Math.floor(diff / 1000) % 60;
+  $("d").textContent = num(Math.floor(mins / 1440));
+  $("h").textContent = Math.floor((mins % 1440) / 60);
+  $("m").textContent = mins % 60;
+  $("cal").textContent = calendarText(now);
+
+  // Milestones: celebrations only, the counter above never depends on them.
+  var list = buildMilestones(now + 3 * 365 * DAY);
+  var next = null, prev = null, reached = [];
+  for (var i = 0; i < list.length; i++){
+    if (list[i].t <= now){ reached.push(list[i]); prev = list[i]; }
+    else if (!next){ next = list[i]; }
+  }
+  $("nName").textContent = next.name;
+  $("nWhen").textContent = fmtDate(next.t);
+  var rm = Math.floor((next.t - now) / 60000);
+  $("nLeft").textContent = Math.floor(rm / 1440) + "d " + Math.floor((rm % 1440) / 60) + "h to go";
+  var from = prev ? prev.t : START;
+  $("bar").style.width = Math.min(100, (now - from) / (next.t - from) * 100).toFixed(1) + "%";
+
+  var dn = $("done"); dn.innerHTML = "";
+  reached.slice(-4).forEach(function(r){ var e = document.createElement("em"); e.textContent = r.name; dn.appendChild(e); });
+
+  var pt = $("party");
+  if (prev && now - prev.t < DAY){ pt.textContent = "Today: " + prev.name + " And it keeps going…"; pt.className = "party on"; }
+  else pt.className = "party";
+}
+function tick(){
+  render();
+  setTimeout(tick, 1000 - (Date.now() % 1000) + 5);
+}
+document.addEventListener("visibilitychange", function(){ if(!document.hidden) render(); });
+window.addEventListener("focus", render);
+tick();
+
+// Make the page installable (manifest built at runtime).
+try {
+  var icon = "data:image/svg+xml," + encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='#14090d'/><text x='50' y='70' font-size='56' text-anchor='middle'>❤️</text></svg>");
+  var mf = {name:"Madhiiii ❤️ Nilan", short_name:"Since We Met", display:"standalone", background_color:"#14090d", theme_color:"#14090d", icons:[{src:icon, sizes:"any", type:"image/svg+xml", purpose:"any"}]};
+  var l = document.createElement("link"); l.rel = "manifest";
+  l.href = URL.createObjectURL(new Blob([JSON.stringify(mf)], {type:"application/manifest+json"}));
+  document.head.appendChild(l);
+} catch(e){}
+</script>
+</body>
+</html>
